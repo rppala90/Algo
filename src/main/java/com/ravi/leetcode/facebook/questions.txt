@@ -5,9 +5,9 @@
 17 Letter Combinations of a Phone Number 28.6% Medium
 20 Valid Parentheses 29.3% Easy
 23 Merge k Sorted Lists 23.3% Hard
-
 25 Reverse Nodes in k-Group 27.5% Hard
 26 Remove Duplicates from Sorted Array 33.4% Easy
+
 28 Implement strStr() 24.8% Easy
 33 Search in Rotated Sorted Array 30.2% Hard
 38 Count and Say 28.9% Easy
