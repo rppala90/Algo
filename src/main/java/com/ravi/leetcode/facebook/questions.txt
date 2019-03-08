@@ -11,6 +11,9 @@
 33 Search in Rotated Sorted Array 30.2% Hard
 38 Count and Say 28.9% Easy
 43 Multiply Strings 23.4% Medium
+102 Binary Tree Level Order Traversal 32.7% Easy
+
+
 
 44 Wildcard Matching 17.4% Hard
 49 Group Anagrams 27.4% Medium
@@ -29,8 +32,10 @@
 88 Merge Sorted Array 30.0% Easy
 90 Subsets II 30.5% Medium
 91 Decode Ways 17.5% Medium
+
 98 Validate Binary Search Tree 20.9% Medium
-102 Binary Tree Level Order Traversal 32.7% Easy
+
+
 117 Populating Next Right Pointers in Each Node II 32.8% Hard
 121 Best Time to Buy and Sell Stock 36.0% Easy
 125 Valid Palindrome 23.8% Easy

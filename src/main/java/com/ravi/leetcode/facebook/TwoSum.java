@@ -1,6 +1,7 @@
 package com.ravi.leetcode.facebook;
 
 import java.util.Hashtable;
+import java.util.LinkedList;
 
 public class TwoSum {
 
@@ -17,6 +18,7 @@ public class TwoSum {
         break;
       }
     }
+
     return retVal;
   }
 
