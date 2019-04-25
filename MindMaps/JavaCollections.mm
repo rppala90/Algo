@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1548455111683" ID="ID_606969410" MODIFIED="1548628316267" TEXT="Java Collections">
+<node CREATED="1548455111683" ID="ID_606969410" MODIFIED="1553744543292" TEXT="Java Collections">
 <node CREATED="1548628326200" ID="ID_1312194909" MODIFIED="1551214382333" POSITION="right">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -95,10 +95,9 @@
       <b>Priority Queue</b>&#160;supports 3 primary operations: Insert, Find-Min/Max, delete-Min/Max.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node CREATED="1548628571567" ID="ID_1912908470" MODIFIED="1548696541233" POSITION="left">
+<node CREATED="1548628571567" ID="ID_1912908470" MODIFIED="1553744963503" POSITION="left">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -123,10 +122,11 @@
       HashMap : No ordering. TreeMap : Ordered.
     </p>
     <p>
-      TreeMap cis an implementation of both SortableMap and NavigableMap
+      TreeMap is an implementation of both SortableMap and NavigableMap
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node CREATED="1548691516306" ID="ID_1768853296" MODIFIED="1548692271789" POSITION="right">
 <richcontent TYPE="NODE"><html>

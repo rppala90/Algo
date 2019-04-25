@@ -177,10 +177,9 @@
       }
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
-<node CREATED="1548961877262" ID="ID_1701385039" MODIFIED="1548971838742" POSITION="left">
+<node CREATED="1548961877262" ID="ID_1701385039" MODIFIED="1555428359627" POSITION="left">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -188,6 +187,108 @@
   <body>
     <p>
       <b>Locks</b>&#160;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      public class Synchronizer {
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Lock lock = new Lock();
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      public void doSynchronized() throws InterruptedException {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;this.lock.lock();
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;// Critical Section
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;this.lock.unlock();
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      }
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      public class Lock {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;private boolean isLocked = false;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;private Thread lockingThread = null;
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;public synchronized void lock() throws InterruptedException {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;while(isLocked) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;wait();
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;isLocked = true;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lockingThread = Thread.currentThread();
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;public synchronized void unlock() {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;if(this.lockingThread != Thread.currentThread()) {
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;throw new IllegalMonitorStateException(&quot;Calling Thread has not locked this lock&quot;);
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;isLocked = false;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lockingThread = null;
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;notify();
+    </p>
+    <p>
+      &#160;&#160;&#160;&#160;&#160;}
+    </p>
+    <p>
+      }
     </p>
   </body>
 </html>

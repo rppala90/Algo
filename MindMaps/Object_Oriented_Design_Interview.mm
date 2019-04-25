@@ -357,7 +357,7 @@
   </body>
 </html></richcontent>
 </node>
-<node CREATED="1551636343388" ID="ID_676801378" MODIFIED="1551658931411" POSITION="left">
+<node CREATED="1551636343388" HGAP="60" ID="ID_676801378" MODIFIED="1553550268913" POSITION="left" VSHIFT="-83">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -531,8 +531,7 @@
       
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </map>
